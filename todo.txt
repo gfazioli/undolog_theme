@@ -1,0 +1,9 @@
+
+ - Sistemare la parte social nel single.php
+ - Disabilitare Plugin facebook - inserito a mano
+ - Rifare modulo contatti
+ - Disabilitare Contact Form
+
+ - Rifare le pagine template come sitemap, vedi vecchio tema
+
+ - Costruire le varie Sidebar; pagine, post, elenchi, home, etc...
