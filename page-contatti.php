@@ -14,9 +14,7 @@ if( isset( $_POST[ 'send' ] ) && 'send' == $_POST[ 'send' ] ) {
   $message .= sprintf( 'Per: %s', $what ) . "\n\n";
   $message .= $body;
 
-  $result = wp_mail( 'giovambattista.fazioli@gmail.com', $subject, $body );
-
-  var_dump( $result );
+  $result = wp_mail( 'giovambattista.fazioli@gmail.com', $subject, $message );
 
   function undolog_theme_mail_sent()
   {
@@ -39,7 +37,6 @@ if( isset( $_POST[ 'send' ] ) && 'send' == $_POST[ 'send' ] ) {
     <div class="entry-content">
 
       <?php do_action( 'undolog_theme_mail_sent' ) ?>
-      <?php echo md5( 'g.fazioli@undolog.com' ) ?>
 
       <form method="post" action="">
 
