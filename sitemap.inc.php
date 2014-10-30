@@ -1,7 +1,8 @@
 <h3>Pagine</h3>
 		<ul>
 			<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">Undolog.com - Home Page</a></li>
-			<li><a target="_blank" href="http://code.google.com/p/undolibrary/downloads/list">Download</a></li>
+			<li><a target="_blank" href="https://github.com/gfazioli">GitHub</a></li>
+			<li><a target="_blank" href="https://code.google.com/p/undolibrary/">Google Project</a></li>
 			<?php wp_list_pages('title_li=&'); ?>
 		</ul>
 		<?php $archive_query = new WP_Query('showposts=1000'); ?>
@@ -30,7 +31,7 @@
 
 		<div class="sitemapBox">
 			<ul>
-				<?php wp_list_categories('title_li=0&show_count=1'); ?>
+				<?php wp_list_categories	('title_li=0&show_count=1'); ?>
 			</ul>
 		</div>
 		<h3>Feeds RSS/FeedBurner</h3>
